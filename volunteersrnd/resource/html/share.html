@@ -1,0 +1,56 @@
+<style>
+.share{
+	background-color: #ececec;
+	display: inline-block;
+	padding: 7px 5px;
+}
+	.share div[data-share-data]:after{
+		content: "";
+		display: block;
+		clear: both;
+		height: 0;
+	}
+		.share div:first-child{
+			margin-left: 0;
+		}
+		.share .twitter,
+		.share .vk,
+		.share .facebook{
+			background-image: url(share.png);
+			margin-left: 7px;
+			border-radius: 3px;
+			height: 24px;
+			width: 24px;
+			float: left;
+			cursor: pointer;
+		}
+		.share .twitter{
+			background-color: #00aced;
+			background-position: 0 -61px;
+		}
+		.share .twitter:hover{
+			background-color: #008abe;
+		}
+		.share .vk{
+			background-color: #48729e;
+			background-position: 0 -32px;
+
+		}
+		.share .vk:hover{
+			background-color: #3a5b7e;
+		}
+		.share .facebook{
+			background-color: #3c5a98;
+			background-position: 0 0;
+		}
+		.share .facebook:hover{
+			background-color: #30487a;
+		}
+</style>
+<div class="share">
+	<div data-share-data='{"url": "http://falbar.ru/article/id/97", "img": "http://falbar.ru/uploads/storage/images/2015/04/ffcf825c023909a06be1b99f6de573df.jpg", "title": "Всплывающие подсказки на чистом CSS ", "text": "Всплывающие подсказки без jQuery на чистом CSS."}'>
+		<div onclick="share.twitter($(this))" class="twitter"></div>
+		<div onclick="share.vk($(this))" class="vk"></div>
+		<div onclick="share.facebook($(this))" class="facebook"></div>
+	</div>
+</div>
